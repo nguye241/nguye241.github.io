@@ -1,11 +1,60 @@
 * {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3em;
-    color: rgb(102,0,17)
+    font-size: 1em;
+    color: rgb(11, 0, 30);
     line-height: 1.5em;
+    margin: 0;
+    padding: auto;
 }
-<body>
-{background-color: #f2f2f2;
-    
-
+body
+{background-color: #fadaf2;
+background-image: url(images/1.png);
+background-repeat: space repeat;
+}
+header {
+    text-align: center;
+    font-size: 2em;
+}
+footer {
+    text-align: right;
+    padding: 1.5em
+}
+article p, footer p, hr {
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+nav, footer {
+    font-size: 1em;
+}
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    text-decoration: underline overline #9732fc;
+    font-size: 2.5em;
+    color:rgb(0, 77, 165)
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding: 1em;
+    white-space: nowrap;
+}
+footer ul {
+    margin-top: 2em;
+}
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5em;
+}
+a:link {
+    color: rgb(212, 101, 16); 
+ }
+a:hover {
+    color: rgb(99, 192, 0)
+}
+a:visited {
+    color: rgb(198, 30, 0);
 }
