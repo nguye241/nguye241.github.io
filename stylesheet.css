@@ -8,7 +8,7 @@
 }
 body
 {background-color: #fff4fc;
-background-image: url(images/texture-2.png);
+background-image: url("images/texture-2.png");
 background-repeat: repeat;
 overflow: auto;
 position: relative;
@@ -26,7 +26,7 @@ header {
 }
 footer {
     text-align: right;
-    padding: 1.5em
+    padding: 1.5em;
 }
 nav, header, footer {
     text-align: center;
@@ -51,7 +51,7 @@ h1 {
     text-transform: uppercase;
     text-decoration: underline overline #d032fc78;
     font-size: 2.5em;
-    color:rgb(180, 0, 27)
+    color:rgb(180, 0, 27);
 }
 h4 {
     text-decoration: underline;
@@ -93,6 +93,7 @@ img {
 .col-12 {width: 100%;}
 
 /* End Columns CSS */
+
 div.FavGames {
     font-size: 1.2em;
 }
