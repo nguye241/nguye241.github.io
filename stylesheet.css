@@ -32,7 +32,6 @@ nav, header, footer {
     text-align: center;
     padding-bottom: 2em;
     width: 100%;
-    height: 100%;
 }
 article p, footer p, hr {
     margin-top: 2em;
@@ -44,8 +43,11 @@ nav, footer {
 #wrapper {
     width: 80%;
     margin: auto;
-    position:relative;
-    }
+    position: relative;
+}
+.center {
+    text-align: center;
+}
 h1 {
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
@@ -135,4 +137,80 @@ a:hover {
 }
 a:visited {
     color: rgb(204, 31, 0);
+}
+
+@media only screen and (max-width: 400px) {
+    
+    nav, header, footer {
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    body {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    ul li {
+        font-size: .9em;
+    }
+    
+    div#bio {
+        text-align: center;
+    }
+    
+    div.FavGames>p {
+        width: 100%;
+        
+    }
+    
+    .columns {
+        width: 100%;
+        float: left;
+        margin: 0%;
+    }
+    
+    .col-5, .col-7 {
+        width: 100%;
+    }
+    
+    .FavGames img {
+        margin-bottom: 1em;
+    }
+    
+    div.description {
+        text-align: center;
+    }
+
+    article {
+        margin: 0;
+    }
+    
+    div.FavGames {
+        text-align: center;
+    }
+    
+    div.FavGames {
+        font-size: 1em;
+    }
+    
+    img#minInsta {
+        visibility: hidden;
+}
+    
+    .protagIntro {
+    clear: right;
+    display: flex;
+    flex-direction: column;
+}
+
+    .protagIntro > div {
+        width: 100%;
+        padding: 3%;
+        background-color: rgba(0, 0, 0, .05);
+    }
+    
 }
