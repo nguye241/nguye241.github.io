@@ -2,125 +2,165 @@
 <html lang="en">
     <head>
         <title>Nghi's Sandbox</title>
-        <link href="stylesheet.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width,
 initial-scale=1.0">
-
+        <!-- CSS Links -->
+        <link href="css/stylesheet.css" type="text/css" rel="stylesheet">
+        <link href="css/skeleton.css" type="text/css" rel="stylesheet">
+        <link href="css/normalize.css" type="text/css" rel="stylesheet">
+        <!-- CSS Links -->
     </head>
 
-    <body>
-        <a href="https://www.instagram.com/miniminiminminn/" target="_blank" ><img id="minInsta" src="images/instagramlogo.png" alt="Follow me on Instagram"/></a>
-       
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Project 1</a></li>
-                    <li><a href="#">Project 1 Process</a></li>
-                    <li><a href="#">Project 2</a></li>
-                    <li><a href="#">Project 2 Process</a></li>
-                </ul>
-            </nav>
-            <h1>Nghi Nguyen</h1>
-            <h2>DSGN 360 - Digital Media Design I</h2>
-            <h3>Winter 2023</h3>
+    <style>
+        .button.button-primary,
+        button.button-primary,
+        input[type="submit"].button-primary,
+        input[type="reset"].button-primary,
+        input[type="button"].button-primary {
+        color: #FFF;
+        background-color: #bc4861;
+        border-color: #bc4861; }
+        .button.button-primary:hover,
+        button.button-primary:hover,
+        input[type="submit"].button-primary:hover,
+        input[type="reset"].button-primary:hover,
+        input[type="button"].button-primary:hover,
+        .button.button-primary:focus,
+        button.button-primary:focus,
+        input[type="submit"].button-primary:focus,
+        input[type="reset"].button-primary:focus,
+        input[type="button"].button-primary:focus {
+        color: #FFF;
+        background-color: #db767e;
+        border-color: #db767e; }
+    </style>
+
+    <body class="container">
+        <header class="row">
+            <div class="twelve columns">
+                <nav>
+                    <ul>
+                        <li><a href="#">Project 1</a></li>
+                        <li><a href="#">Project 1 Process</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 2 Process</a></li>
+                    </ul>
+                </nav>
+                <h1>Nghi Nguyen</h1>
+                <h2>DSGN 360 - Digital Media Design I</h2>
+                <h3>Winter 2023</h3>
+            </div>
         </header>
-        <div id="wrapper">
-        <article>
-            <img src="images/sonynorthwestconcept.jfif">
-            <div id="bio">
-            <p>I have lived in Vietnam for 17 years before moving to the US to now become a senior Design student at WWU. Initially, I had little idea of what to talk about for this section, but I decided to talk about my favorite video games.</p>
-            <p>That being said, it's always a bit strange when people ask me "What do you think about -Name of a Trending TV show-?" considering how I'm more of a video game person than a "TV shows" person.</p>
-            <p>But then again, that's not because I hate watching TV shows, I just prefer the feeling of being imerged into an open world video game, which (arguably) has really good writing, just like a really good book or TV show.</p>
+
+        <article class="row">
+            <div class="six columns">
+                <img class="u-full-width" src="images/sonynorthwestconcept.jfif" alt="Game Photo">
+            </div>
+            <div class="six columns">
+                <p>I have lived in Vietnam for 17 years before moving to the US to now become a senior Design student at WWU. Initially, I had little idea of what to talk about for this section, but I decided to talk about my favorite video games.</p>
+                <p>That being said, it's always a bit strange when people ask me "What do you think about -Name of a Trending TV show-?" considering how I'm more of a video game person than a "TV shows" person.</p>
+                <p>But then again, that's not because I hate watching TV shows, I just prefer the feeling of being imerged into an open world video game, which (arguably) has really good writing, just like a really good book or TV show.</p>
+                <a class="button button-primary" href="https://www.instagram.com/miniminiminminn/" target="_blank"> My Instagram</a>
             </div>
         </article>
+
         <hr>
 
         <br>
 
-        <div class="FavGames">
-        <h2>Experience:</h2>
-        <p>I would say I have my fair share of video-game-playing experience, even though to be completely honest: My gaming skill is questionable at most. Here are some of my favorites:</p>
-        <br>
+        <div class="row">
+            <div class="twelve columns">
+                <h2>Experience:</h2>
+                <p>I would say I have my fair share of video-game-playing experience, even though to be completely honest: My gaming skill is questionable at most. Here are some of my favorites:</p>
+            </div>
 
-        <div class="favName  columns col-12">
-            <div class="columns col-5">
-                <img src="images/GodOfWar.jpg"/>
-        </div>
-        <div class="columns col-7">
-            <div class="description">
+            <br>
+
+        <div class="row">
+            <div class="six columns">
+                <img class="u-full-width" src="images/GodOfWar.jpg" alt="GoW"/>
+            </div>
+
+            <div class="six columns">
                 <h4>God of War</h4>
                 <p>Released in 2018, God of War is the forth game in the amazing God of War franchise, now with a whole new look and the come back of director Cory Barlog - who was also the director for the first game God of War (2005) and God of War II (2007). The game shows the new journey moving from Greek to Norse mythogoly of the protagonist Kratos, in which he shows tremendous charater development throughout the years. The game also shows the improvements in its visual, including incredible physics and landscapes.</p>
             </div>
         </div>
-        </div>
 
-        <div class="favName columns col-12 clearRight">
-            <div class="columns col-5">
-                <img src="images/NightInTheWoods.png"/>
-        </div>
-        <div class="columns col-7">
-            <div class="description">
+        <div class="row">
+            <div class="six columns">
+                <img class="u-full-width" src="images/NightInTheWoods.png" alt="NITW"/>
+            </div>
+            <div class="six columns">
                 <h4>Night In The Woods</h4>
                 <p>Released in 2017, Night In The Woods is a story-focused exploration game which follows Mae Borrowski, who recently dropped out of college and has returned to her hometown - Possum Springs - to find out everything seems to have change as time goes on, without her. The game has an adorable artstyle with characters as different animals which serves as a nice mask for a more dark (?) and confusing story. The game also has incredible and relaxing soundtracks that I may or may not have been listening on loop on a daily basis.</p>
             </div>
-            </div>
         </div>
 
-        <div class="favName columns col-12 clearRight">
-            <div class="columns col-5">
-                <img src="images/Hades.png">
-        </div>
-        <div class="columns col-7">
-            <div class="description">
+        <div class="row">
+            <div class="six columns">
+                <img class="u-full-width" src="images/Hades.png" alt="Hades"/>
+            </div>
+        <div class="six columns">
                 <h4>Hades</h4>
                 <p>Released in 2020, Hades is a rogue-like video game that follows Zagreus - the son of the God of the Underworld Hades and the Goddess of Spring Persephone - as he tries to escape the Underworld and reach Mount Olympus, aided by many other Olympian Gods. Despite the grinding nature of it (which can be frustrating at times), the game balances it out with cool rewards and the charming visuals, voice-acting and story. The gatekeeper of the Underworld - Cerberus also makes a rather adorable appearance in the game.</p>
             </div>
-            </div>
         </div>
         
     </div>
-
-    <div class="FavGames">
         
         <hr>
+    <div class="row">
+        <div class="six columns">
+            <h2>The Roles:</h2>
+            <p>What even is a good video game without a charming/powerful protagonist?</p>
         <br>
-
-        <h2>The Roles:</h2>
-        <p>What even is a good video game without a charming/powerful protagonist?</p>
-        <br>
-    
+        </div>
     </div>
-    <div class="protagIntro center">
-        <div class="description">
-            <img src="images/kratos.jpg">
+
+    <div class="row">
+        <div class="six columns">
+            <img class="u-full-width" src="images/kratos.jpg" alt="Kratos"/>
+        </div>
+
+        <div class="six columns">
             <h4>Kratos</h4>
             <p>Kratos is the protagonist of the God of War series, based on Greek and later Norse mythology. The character was voiced by Terrence C. Carson throughout the first game to the third game (2005-2010), with Christopher Judge taking over the role in 2018.</p>
             <p>Over the course of his life, Kratos gradually gained immeasurable levels of superhuman strength, which seems to grow even greater during situations of great rage and anger. However, as he gradually continues with his tragic journey, Kratos grows older and wiser as he encounter different hardships along with his son Atreus, who plays a big role in helping Kratos' development as a character (and a father).</p>
         </div>
+    </div>
 
-        <div class="description">
-            <img src="images/mae.jpg">
+    <div class="row">
+        <div class="six columns">
+            <img class="u-full-width" src="images/mae.jpg" alt="Mae"/>
+        </div>
+
+        <div class="six columns">
             <h4>Mae Borrowski</h4>
             <p>Margaret Borowski - better known as Mae - is the protagonist of Night in the Woods. After Mae drops out of college, she moves back in with her parents in her hometown Possum Springs.</p>
             <p>Mae is very energetic and agile. She enjoys climbing things whenever possible. Her close friends and family often talks about her habits of climbing electrical poles, tightrope walking on the power lines, and general running around and jumping. Mae Borowski has a troubled past, primarily with depression and anger issues.</p>
         </div>
+    </div>
 
-        <div class="description">
-            <img src="images/zag.jfif">
+    <div class="row">
+        <div class="six columns">
+            <img class="u-full-width" src="images/zag.jfif" alt="Zag"/>
+        </div>
+            
+        <div class="six columns">    
             <h4>Zagreus</h4>
             <p>Zagreus is the protagonist of the game Hades, the Prince of the Underworld, and the son of the God Hades and the Goddess Persephone.</p>
             <p>Zagreus has always had a sense that he doesn't belong in the House of Hades. Sometime before the start of the game he decides, against his father's will, to escape from the Underworld—no matter how many tries it might take him. He is aided and encouraged in his journey, primarily by his caretaker Nyx and his mentor Achilles. Others outside the House of Hades, such as Sisyphus, Charon, and the Olympians sometimes offer their aid as well.</p>
         </div>
-
-        </div>
     </div>
+
     <hr>
     <br>
 
-        <footer>
+        <footer class="row">
             <b>© Copyright 2023</b>
             <br>
             <a href="mailto:nguye241@wwu.edu">nguye241@wwu.edu</a>
