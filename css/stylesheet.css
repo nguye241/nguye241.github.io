@@ -62,10 +62,17 @@ ul {
     list-style-type: none;
 }
 li {
-    display: inline;
+    display: inline-block;
+    margin-right: 30px;
     padding: 1em;
-    white-space: nowrap;
+    border-radius: 15px;
+    transition: all 300ms;
 }
+
+li:hover {
+    transform: scale(1.5);
+}
+
 .clearRight {
     clear: right;
 }
@@ -77,6 +84,7 @@ img {
     height: auto;
     margin-top: 1.5em;
 }
+
 /* Columns */
 
 .columns {float:right;}
@@ -211,4 +219,35 @@ a:visited {
         background-color: rgba(0, 0, 0, .05);
     }
     
+}
+
+@keyframes maeJumping {
+    0% {right: -300px; opacity: 0;}
+    25% {opacity: 1;}
+    100% {right: 2000px; opacity: 0;}
+    
+}
+
+img#mae-jumping {
+    
+    opacity: 0;
+    position: relative;
+    right: -300px;
+    animation-name: maeJumping;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 1000px) 
+{
+    img#mae-jumping {
+        
+        visibility: hidden;   
+    }
+
 }
