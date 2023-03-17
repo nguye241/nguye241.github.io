@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffffff;
+    width: 100%;
+}
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+}
+.header img {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+    object-position: 0% 75%;
+}
+.header h1 {
+    position: relative;
+    z-index: 2;
+    margin: 13% 0% 0% 0%;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+.header h4 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-family: 'Sono', serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+}
+
+/* Songs Section */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+.description{
+    padding: 0 10px;
+    width: 55%;
+}
+
+.description h2 {
+    font-size: 7em;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: lowercase;
+    vertical-align: top;
+    font-family: 'Sono', serif;
+}
+
+.description h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.description p {
+    color: #808080;
+    font-size: .7em;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.5;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  55%;
+}
+
+.icon img {
+    width: 100%;
+    animation: hover 3s infinite;
+}
+
+@keyframes hover {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(2%);}
+    100%{transform: translateY(0);}
+}
+
+.reverse{
+    flex-direction: row-reverse;
+} 
+.reverse .icon img{
+    animation-delay: -1.25s;
+}
+
+/* Songs Color*/
+.serendipity{
+    background-color: #f3ead7;
+}
+.serendipity h2{
+    color: #f4da7b;
+}
+.serendipity h3{
+    color: #63c0bf;
+}
+.serendipity p{
+    color: #49848a;
+}
+
+
+.euphoria {
+    background-color: #70cbd6;
+}
+.euphoria h2{
+    color: #f3ac4f;
+}
+.euphoria h3{
+    color: #d40028;
+}
+.euphoria p{
+    color: #e73d49;
+}
+
+
+.singularity {
+    background-color: #6c47a6;
+}
+.singularity h2{
+    color: #f567e3;
+}
+.singularity h3{
+    color: #f65656;
+}
+.singularity p{
+    color: #03ccc2;
+}
+
+
+.epiphany {
+    background-color: #f47c0b;
+}
+.epiphany h2{
+    color: #f9b0c3;
+}
+.epiphany h3{
+    color: #0d7890;
+}
+.epiphany p{
+    color: #9cee9e;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .reverse{
+        flex-direction: column;
+    }
+    .description, .icon{
+        width: 80%;
+    }
+    .description{padding:20px 0;}
+}
